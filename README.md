@@ -59,8 +59,9 @@ echo "# afterClass" >> README.md
 // 문서를 만든다.
 $ git init
 // git 폴더 초기화 
-$ git add README.md
-// git 업로드할 파일 선택 
+$ git add README.md  // git 업로드할 파일 선택 
+$ git add .   // 현재폴더의 모든 파일 업로드
+
 $ git commit -m "first commit"
 // 버전관리에 들어갈 설명 쓰기 
 $ git branch -M main
