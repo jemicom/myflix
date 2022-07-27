@@ -150,7 +150,25 @@ body {
         .email-form input:focus~label{ 
             top: 15%;
         }
-
+        #langSelect,
+        #select-genres,
+        #searchRating,
+        #yearSort,
+        #ratingSort
+        {
+                font-size: 16px;
+                border-radius: 7px;
+                padding: 10px 20px; 
+                margin-right: 4px;
+        }
+        .login-container>button{
+            background-color: #d9232e;
+                border:none;  color: #fff; 
+                font-weight: bold;
+                font-size: 16px;
+                border-radius: 7px;
+                padding: 10px 20px; 
+        }
         .tabs,
         .table-container{ background-color: black;}
 
