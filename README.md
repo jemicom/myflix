@@ -88,13 +88,15 @@ git push -u origin main
 ```
 
 
-# git config 설정하는 방법
+# git config 설정하는 방법  : 로그인
 만약 위에서 user.name 그리고 user.email을 바꾸려면 어떻게 하는지 알아봅니다. 각각 아래와 같습니다. --global를 사용하여 전역으로 설정
 git config --global user.name "홍길동"
 git config --global user.email "email"
 
+# 환경설정을 바꾸고 난 후 환경설정 확인 
+git config --list
 
-# git config 삭제하기
+# git config 삭제하기 : 로그아웃
 git config --unset user.name
 git config --unset user.email
 
@@ -102,7 +104,7 @@ git config --unset user.email
 git config --unset --global user.name
 git config --unset --global user.email
 
-이제 삭제가 되었는지 리스트에서 확인
+#이제 삭제가 되었는지 리스트에서 확인
 git config --list
 
 # 마지막 커밋 메시지 수정  
