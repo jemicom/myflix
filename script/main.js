@@ -32,6 +32,9 @@ const screenPrint = (movies)=>{
         movieBox.classList.add('movie-box');
         // console.log(movieBox);
 
+        // const movieBoxCaption = document.createElement('div');
+        // movieBox.classList.add('movie-box-caption');
+
         const movieCover = document.createElement('img');
         movieCover.classList.add('movie-cover');
         movieCover.setAttribute('src', movie.large_cover_image);
@@ -68,6 +71,8 @@ const screenPrint = (movies)=>{
         detailBtn.classList.add('movie-detail');
         detailBtn.innerHTML = '자세히 보기';
         movieBox.appendChild(detailBtn);
+         
+        
          
         const movieGenres = document.createElement('ul');
         movieGenres.classList.add('movie-genres');
