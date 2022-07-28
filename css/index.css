@@ -7,7 +7,7 @@ nav{ height: 70px; background-color: #000;}
 
 .form-container{ 
     width: 800px; 
-    margin: auto;
+    margin:50px auto;
 }
 
 #search{ width:100%; height: 50px;
@@ -40,6 +40,7 @@ nav{ height: 70px; background-color: #000;}
 
 .searchGroup{ display: flex; width: 800px; margin:auto; 
     justify-content: space-between;
+    align-items: center;
 }
 #searchFormRating{ 
     margin-right:auto; 
@@ -160,6 +161,7 @@ body {
                 border-radius: 7px;
                 padding: 10px 20px; 
                 margin-right: 4px;
+                border:1px solid black;
         }
         .login-container>button{
             background-color: #d9232e;
@@ -176,7 +178,9 @@ body {
             display: flex;
             margin: auto;
         }
-        .tabs-container>div{ padding: 20px;  width: 33.33333333%;
+        .tabs-container>div{ 
+            padding: 20px;   
+            width: 33.33333333%;
             text-align: center;
         }
         .tab-item i{ font-size: 44px; color:rgb(164, 162, 162);}
@@ -185,12 +189,20 @@ body {
         .tab-item:hover p{ color:#fff; }
         .tab-border{ border-bottom: 3px solid rgb(178, 2, 2);}
 
-        .content-inner{ display: flex; width: 70%; margin: auto;
-                align-items: center;
-        }
+        .tab-content{ padding: 50px 0 100px; width: 70%; margin: auto; }
 
+        .content-inner{ display: flex; 
+                align-items: center;
+                justify-content: space-around;
+                font-size:24px;
+        }
+        .content-inner p { width: 400px;   }
+       
         .tab-content-item{ display: none;}
         .show{ display: block;}
+
+        .table-container{ padding-bottom: 100px; }
+        .c-p{ width: 500px; margin:50px auto; }
 
         .c-table{ width: 800px; margin: auto;}
         .c-table tr{ height: 50px;}       
@@ -207,11 +219,63 @@ body {
 }
     
  
-            .swiper-button-next, .swiper-button-prev {
-                color:  rgb(178, 2, 2); 
-            }
+    .swiper-button-next, .swiper-button-prev {
+        color:  rgb(178, 2, 2); 
+    }
 
-        @media screen and ( max-width:700px) {
-            .hide {display: block;}
-        }
-        
+@media screen and ( max-width:1250px) {
+    section{ width: 100%; }
+    .tabs-container{ width: 95%; }
+    .tab-content{ width:95%;}
+    .movies-container{ width: 95%;}
+    .movie-box{ 
+        width: calc( 100% / 3 - 30px);
+    }
+}
+@media screen and ( max-width:1000px) {
+    .tab-item p{ display: none;}   
+    .content-inner img{ width: 40%; }
+    .content-inner>div{ width: 40%; }
+    .c-table{ width:80%;} 
+    .form-container{ width:80%; }
+    .searchGroup{width: 80%;}
+}
+
+@media screen and ( max-width:700px) {  
+    .content-inner{ flex-direction: column;}
+    .content-inner img{ width: 80%; }
+    .content-inner>div{ width: 80%; }
+
+    .movie-box{ width: calc( 100% / 2 - 30px);      }
+    .email-container{ flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .email-form input{ width: 100%; height: 70px; margin-bottom: 10px;}
+    .email-container button{ width: 30%; height: 40px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+    .c-table { width:95%;}   
+    .searchGroup{ flex-wrap: wrap;}
+    
+}
+@media screen and ( max-width:480px) {
+    .movie-box{ width: calc( 100%  - 30px);        }
+    .c-table th:nth-child(2),
+    .c-table th:nth-child(3),
+    .c-table td:nth-child(2),
+    .c-table td:nth-child(3){
+        display: none;
+    }
+    #langSelect,
+    #select-genres,
+    #searchRating,
+    #yearSort,
+    #ratingSort{
+        width:100%;
+        margin: 5px;
+    }
+}

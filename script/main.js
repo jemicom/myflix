@@ -182,3 +182,34 @@ function  selectItem(){
     tabContentItem.classList.add('show');
 }
 tabItems.forEach( item => item.addEventListener('click', selectItem ));
+
+
+// //반응형 사이즈 변할 때 css 클래스 추가 제거 
+// window.addEventListener('resize', (event)=>{
+//     console.log( window.innerWidth ); // 너비 갖고 오기
+//     const brs = document.querySelectorAll('.br');
+//     let winWidth = window.innerWidth;
+//     if( winWidth <= 700 ){
+//         brs.forEach( br => br.classList.remove('hide'))
+//     }else{ 
+//         brs.forEach( br => br.classList.add('hide'))
+//     }
+// })
+
+const emailBtn = document.querySelector('.email-container button');
+emailBtn.addEventListener('click', ()=>{
+    document.querySelector('.email-form input').focus();
+})
+
+$(function(){
+     
+    $(window).on('resize', function(){
+        console.log($(this).width());
+        if( $(this).width() <= 700 ){
+            $('.br').removeClass('hide');
+        }else{
+            $('.br').addClass('hide');
+        }
+    })    
+
+})
