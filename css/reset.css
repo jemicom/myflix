@@ -3,6 +3,7 @@
 }
 a{ text-decoration: none; color:inherit;}
 li{ list-style: none;}
-body{ font-size: 12px; 
-
+body{ 
+   font-size: 12px; 
+   overflow-x: hidden;
 }

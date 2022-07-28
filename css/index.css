@@ -278,4 +278,31 @@ body {
         width:100%;
         margin: 5px;
     }
+
+    #langSelect
+    {
+            font-size: 12px;
+            
+            padding: 5px 10px; 
+            width: 5rem;
+    }
+    .login-container>button{
+        background-color: #d9232e;
+            border:none;  color: #fff; 
+            font-weight: bold;
+            font-size: 12px;
+            border-radius: 7px;
+            padding: 5px 10px; 
+    }
+
+    h3, h4{
+        font-size:14px;
+        width:80%;
+        margin:auto;
+    }
+    .content-inner p{
+        font-size:12px;
+        width: 80%;
+    }
+    .c-p{ width:80%;}
 }
